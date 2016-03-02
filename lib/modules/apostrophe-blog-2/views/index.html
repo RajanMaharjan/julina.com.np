@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+{% include 'pageMacros.html' %}
+{% include 'blogMacros.html' %}
+{% include 'pagerMacros.html' %}
+
+{# the bodyClass block allows us to attach a classname to the body tag for easy style-scoping. #}
+{# be sure to call super() so that any pages inheriting this one will be appending classes, not overriding them. #}
+{% block bodyClass %} demo-blog-index-page{% endblock %}
+
+{% block headerMessage %}You are on the "Blog Index" template of the Apostrophe demo site.{% endblock %}
+
+{% block upperClass %}bg-gold{% endblock %}
+
+{% block headerContent %}
+<div class="demo-pageheader">
+  <div class="column column--vertical-center width-50">
+    {{ aposArea(page, 'pageheader', {
+      textOnly: true,
+      styles: [
+      { value: 'h3', label: 'Title'    },
+      { value: 'h4', label: 'Subtitle' }
+      ]
+    }) }}
+  </div>{#
+    #}<div class="column column--vertical-center width-50 align-right">
+    <div class="demo-image-sticker">
+      {{ aposSingleton(page, 'sticker', 'slideshow', { filter: false, limit: 1, aspectRatio: [1, 1], noHeight: true }) }}
+      <img class="demo-apos-shadow image-sticker" src="/images/demo_logo_apos_shadow.png" alt="Apostrophe">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block mainContent %}
+
+<div class="block content">
+  <div class="inner">
+    {% if page._edit %}
+      <div data-new-blog-post>
+        <div class="apos-ui-container">
+          <a class="apos-control apos-button" href="#"><i class="icon-plus"></i> New Blog Post</a>
+      </div>
+      </div>
+    {% endif %}
+    {{ renderBlogListings(pieces) }}
+    {%- if ((pager.page > 1) or (pager.total > 1)) -%}
+      <div class="demo-pager align-right">{{ renderPager(pager, page.slug) }}</div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% endblock %}

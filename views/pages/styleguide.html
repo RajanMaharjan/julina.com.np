@@ -1,0 +1,127 @@
+{% extends 'layout.html' %}
+
+{% block mainContent %}
+  <div class="block">
+    <div class="inner">
+      <h1>This is an h1</h1>
+      <h2>This is an h2</h2>
+      <h3>This is an h3</h3>
+      <h4>This is an h4</h4>
+      <h5>This is an h5</h5>
+      <h6>This is an h6</h6>
+      <p>This is a p tag. This is a <a href="/">link</a>, <strong>this is strong</strong>, and <em>this is em</em>.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="inner">
+      <div class="demo-pageheader">
+        <img class="demo-apos-lockup pageheader-logo" src="/images/demo_logo_apos_lockup.png" alt="Apostrophe">
+        <h2 class="pageheader-heading">A dinosaur is a fan's transport. Clovered expansions show us how teeths can be creeks.</h2>
+        <p class="pageheader-body">In ancient times the downstream swan reveals itself as a wicked building to those who look. A squash is the connection of a cirrus. One cannot separate panthers from peeling forks. Servants are lumpen athletes.</p>
+      </div>
+    </div>
+    <div class="demo-workspaces-marquee">
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="inner">
+      <div class="demo-pageheader">
+        <div class="column column--vertical-center width-50">
+          <h2 class="pageheader-heading">The First Anaste.</h2>
+          <h4 class="pageheader-subheading">The garage is, in it's own way, a land.</h4>
+        </div>{#
+      #}<div class="column column--vertical-center width-50 align-right">
+          <div class="demo-image-sticker">
+            {{ aposSingleton(page, 'sticker', 'slideshow', { limit: 1, aspectRatio: [1, 1] }) }}
+            <img class="demo-apos-shadow image-sticker" src="/images/demo_logo_apos_shadow.png" alt="Apostrophe">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block bg-gray block--5">
+    <div class="inner">
+      <div class="column width-30">
+        <div class="demo-blog-card">
+          <div class="blog-card-head">
+            {{ aposSingleton(page, 'blogCard', 'slideshow', { limit: 1, aspectRatio: [324, 162], noHeight: true }) }}
+            <div class="blog-card-title-container">
+              <h6 class="blog-card-title">Recent controversy aside, a slime is the back of a tip.</h6>
+              <span class="blog-card-author">by Nips Smith</span>
+            </div>
+          </div>
+          <div class="blog-card-excerpt-container">
+            <p class="blog-card-excerpt">The card of a quiet becomes a tubate freckle. Glues are kutcha vermicellis. Extending this logic, a couch is the organ of a bean. Those spandexes are nothing more than entrances.</p>
+            <a href="/">Read More</a>
+          </div>
+        </div>
+        <span class="sticker-red sticker-red--overlap">Nov 28th, 2014</span>
+      </div>{#
+    #}<div class="column width-30">
+        <div class="demo-blog-card">
+          <div class="blog-card-head">
+            {{ aposSingleton(page, 'blogCard', 'slideshow', { limit: 1, aspectRatio: [324, 162], noHeight: true }) }}
+            <div class="blog-card-title-container">
+              <h6 class="blog-card-title">Recent controversy aside, a slime is the back of a tip.</h6>
+              <span class="blog-card-author">by Nips Smith</span>
+            </div>
+          </div>
+          <div class="blog-card-excerpt-container">
+            <p class="blog-card-excerpt">The card of a quiet becomes a tubate freckle. Glues are kutcha vermicellis. Extending this logic, a couch is the organ of a bean. Those spandexes are nothing more than entrances.</p>
+            <a href="/">Read More</a>
+          </div>
+        </div>
+        <span class="sticker-red sticker-red--overlap">Nov 28th, 2014</span>
+      </div>{#
+    #}<div class="column width-30">
+        <div class="demo-blog-card">
+          <div class="blog-card-head">
+            {{ aposSingleton(page, 'blogCard', 'slideshow', { limit: 1, aspectRatio: [324, 162], noHeight: true }) }}
+            <div class="blog-card-title-container">
+              <h6 class="blog-card-title">Recent controversy aside, a slime is the back of a tip.</h6>
+              <span class="blog-card-author">by Nips Smith</span>
+            </div>
+          </div>
+          <div class="blog-card-excerpt-container">
+            <p class="blog-card-excerpt">The card of a quiet becomes a tubate freckle. Glues are kutcha vermicellis. Extending this logic, a couch is the organ of a bean. Those spandexes are nothing more than entrances.</p>
+            <a href="/">Read More</a>
+          </div>
+        </div>
+        <span class="sticker-red sticker-red--overlap">Nov 28th, 2014</span>
+      </div>
+      <div class="column width-100 align-right">
+        <a href="/">See All Blog Posts</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="block bg-light-blue">
+    <div class="inner">
+      <div class="demo-workspace demo-workspace--blue"></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="inner">
+      <ul class="demo-blog-listings">
+        <li class="column width-100 demo-blog-listing">
+          <div class="column width-33 blog-listing-image">
+            <div class="blog-card-head">
+            {{ aposSingleton(page, 'blogCard', 'slideshow', { limit: 1, aspectRatio: [324, 162], noHeight: true }) }}
+            <span class="sticker-red sticker-red--overlap">Nov 28th, 2014</span>
+          </div>
+        </div>{#
+        #}<div class="column width-66 blog-listing-info">
+          <h5 class="blog-listing-title">Here Is a Title</h5>
+          <h6 class="blog-listing-author">by Nips Smith</h6>
+          <p class="blog-listing-excerpt">Lucas ipsum dolor sit amet ben yoda hutt hutt mothma darth jabba calrissian sebulba mara. Binks boba moff boba solo yavin coruscant wampa greedo. Anakin r2-d2 ahsoka hutt kit. Hutt wedge biggs coruscant. Kenobi luke skywalker fisto maul antilles sidious chewbacca. Maul mon antilles ventress skywalker c-3po. Grievous vader twi'lek droid coruscant twi'lek cade antilles. Watto jabba leia solo qui-gonn jawa sebulba. Mandalore tatooine sidious hutt naboo grievous palpatine. Hutt calrissian grievous skywalker.</p>
+          <a href="/">Read More</a>
+        </div>
+      </li>
+    </ul>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{
+  "name": "julina.com.np",
+  "version": "1.0.0",
+  "description": "Personal Blog website of Julina Maharjan",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/punkave/apostrophe-sandbox"
+  },
+  "author": "Julina Maharjan",
+  "license": "BSD",
+  "dependencies": {
+    "apostrophe-blog-2": "0.5.x",
+    "apostrophe-browserify": "0.5.x",
+    "apostrophe-editor-2": "0.5.x",
+    "apostrophe-events": "^0.5.18",
+    "apostrophe-groups": "0.5.x",
+    "apostrophe-people": "0.5.x",
+    "apostrophe-redirects": "0.5.x",
+    "apostrophe-search": "0.5.x",
+    "apostrophe-site": "0.5.x",
+    "apostrophe-snippets": "^0.5.79",
+    "apostrophe-ui-2": "0.5.x",
+    "optimist": "~0.6.0"
+  }
+}
